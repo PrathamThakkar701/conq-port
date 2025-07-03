@@ -22,7 +22,10 @@ const isProduction = process.env.NODE_ENV === 'production';
 // ✅ CORS Middleware
 // Allows requests from frontend, passes cookies
 app.use(cors({
-  origin: ['http://localhost:3001'], // local frontend
+  origin: [
+    'http://localhost:3001',
+    'https://conq-port-bice.vercel.app'
+  ],
   credentials: true,                // allow sending cookies
 }));
 

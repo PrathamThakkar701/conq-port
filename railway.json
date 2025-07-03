@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd scheduler-backend && npm install"
+  },
+  "start": {
+    "startCommand": "cd scheduler-backend && npm start"
+  }
+} 
